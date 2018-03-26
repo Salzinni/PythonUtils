@@ -42,14 +42,12 @@ def FTPSubmit(archlocal):
 
     print('Mostrando spool actualizado.....')
     import time
-    time.sleep(20)
+    time.sleep(2)
     ftp.sendcmd('site jesstatus=all jesjobname=* jesowner=<usuario-TSO>')
     ftp.dir()
 
-
     ftp.quit()
     localfile.close()
-    jobname = buscaJobName(archlocal)
     
-    print('Job submitido con nombre.... ',jobname)
+    print('Job submitido con nombre.... ')
     return jobname
