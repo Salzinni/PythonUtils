@@ -26,7 +26,7 @@ def FTPSubmit(archlocal):
 
    
     ftp.voidcmd('site filetype=jes')
-    ftp.sendcmd('site jesstatus=all jesjobname=* jesowner=SITOJEB')
+    ftp.sendcmd('site jesstatus=all jesjobname=* jesowner=<usuario-TSO>')
    
     #Las siguientes dos lineas muestran el spool existente para este owner
     print('Mostrando spool antes de dar submit...')
