@@ -43,7 +43,7 @@ def FTPSubmit(archlocal):
     print('Mostrando spool actualizado.....')
     import time
     time.sleep(20)
-    ftp.sendcmd('site jesstatus=all jesjobname=* jesowner=SITOJEB')
+    ftp.sendcmd('site jesstatus=all jesjobname=* jesowner=<usuario-TSO>')
     ftp.dir()
 
 
